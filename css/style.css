@@ -1,0 +1,96 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('../img/potatobg.jpg');
+    background-size: cover;  /* Make sure it covers the entire area */
+    background-repeat: no-repeat;  /* Don’t repeat the image */
+    background-position: center center;  /* Center the image */
+    background-attachment: fixed;  /* Keeps the background fixed when scrolling */
+    text-align: center; 
+    color:#f4f1ea;
+}
+
+header {
+    background-color:transparent;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:xx-large;
+}
+
+header h1 {
+    margin: 20;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20;
+    display: internal;
+    justify-content: center;
+}
+
+.learn-more-btn:active {
+    transform: scale(0.95);  
+}
+
+
+.potato-types {
+    padding: 50px;
+    background-color: #f4f1ea; /* Light earth-tone for the section background */
+    text-align: center;
+}
+
+.potato-types h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #6B4226; /* Darker brown for the heading */
+}
+
+.potato-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Space between items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+}
+
+.potato-item {
+    background-color: #D2B48C; /* Tan background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.potato-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.potato-item h3 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+    color: #4E342E; /* Dark brown for potato names */
+}
+
+.potato-item p {
+    font-size: 16px;
+    color: #5D4037; /* Medium brown for the description text */
+}
+
+.potato-item:hover {
+    background-color: #A0522D; /* Darker earth tone for hover effect (Sienna) */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .potato-grid {
+        grid-template-columns: 1fr; /* Stack the items vertically on small screens */
+    }
+}
+
